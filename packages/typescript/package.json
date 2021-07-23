@@ -1,0 +1,24 @@
+{
+  "name": "@drmikecrowe/configs-typescript",
+  "description": "🧩 Typescript config",
+  "version": "0.1.1",
+  "contributors": [
+    "baloran <arnaud.allouis@unlikely.studio>",
+    "bastienrobert <bastien@unlikely.studio>",
+    "drmikecrowe@gmail.com"
+  ],
+  "files": [
+    "base.json",
+    "library.json",
+    "dom.json",
+    "definitions"
+  ],
+  "gitHead": "ae4660056efed665405739a1ce70dc2acc75e551",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "ssh://git@github.com:drmikecrowe/configs.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

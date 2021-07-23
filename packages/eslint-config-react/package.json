@@ -1,0 +1,30 @@
+{
+  "name": "@drmikecrowe/eslint-config-react",
+  "description": "drmikecrowe eslint config for React.js",
+  "version": "0.1.2",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "@drmikecrowe/eslint-config": "0.1.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "eslint-config",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

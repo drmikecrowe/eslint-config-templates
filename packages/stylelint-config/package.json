@@ -1,0 +1,26 @@
+{
+  "name": "@drmikecrowe/stylelint-config",
+  "description": "drmikecrowe stylelint config",
+  "version": "0.1.1",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "stylelint-config"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@drmikecrowe/eslint-config-prettier-react",
+  "description": "drmikecrowe eslint config for React.js with prettier",
+  "version": "0.1.2",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "@drmikecrowe/eslint-config-prettier": "0.1.2",
+    "@drmikecrowe/eslint-config-react": "0.1.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "eslint-config",
+    "prettier",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

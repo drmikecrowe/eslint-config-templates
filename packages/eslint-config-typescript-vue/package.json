@@ -1,0 +1,29 @@
+{
+  "name": "@drmikecrowe/eslint-config-typescript-vue",
+  "description": "drmikecrowe eslint config for TypeScript and Vue.js",
+  "version": "0.1.2",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "@drmikecrowe/eslint-config-typescript": "0.1.2",
+    "@drmikecrowe/eslint-config-vue": "0.1.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "eslint-config",
+    "typescript",
+    "vue"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

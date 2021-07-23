@@ -1,0 +1,40 @@
+{
+  "name": "mrm-preset-drmikecrowe",
+  "description": "Common tasks for Mrm",
+  "version": "0.1.1",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com",
+    "url": "https://github.com/drmikecrowe/configs"
+  },
+  "dependencies": {
+    "find-githost": "^1.0.0",
+    "git-username": "^1.0.0",
+    "mrm-core": "^6.0.0",
+    "mrm-task-eslint": "^3.0.0",
+    "mrm-task-prettier": "^4.0.0",
+    "mrm-task-typescript": "^3.0.0",
+    "parse-author": "^2.0.0",
+    "rc": "^1.2.8",
+    "smpltmpl": "^1.0.2",
+    "syncpack": "^5.7.11",
+    "user-meta": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "config.json",
+    "*/index.js"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs",
+  "keywords": [
+    "mrm",
+    "mrm-preset",
+    "mrm-task"
+  ],
+  "license": "MIT",
+  "main": "config.json",
+  "repository": "https://github.com/drmikecrowe/configs.git",
+  "scripts": {}
+}

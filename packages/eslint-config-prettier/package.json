@@ -1,0 +1,30 @@
+{
+  "name": "@drmikecrowe/eslint-config-prettier",
+  "description": "drmikecrowe eslint config with prettier",
+  "version": "0.1.2",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "@drmikecrowe/eslint-config": "0.1.2",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "eslint-config",
+    "prettier"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

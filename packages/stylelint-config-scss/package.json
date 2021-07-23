@@ -1,0 +1,28 @@
+{
+  "name": "@drmikecrowe/stylelint-config-scss",
+  "description": "drmikecrowe stylelint config",
+  "version": "0.1.1",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "dependencies": {
+    "@drmikecrowe/stylelint-config": "0.1.1",
+    "stylelint-scss": "^3.19.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "scss",
+    "stylelint-config"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}

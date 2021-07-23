@@ -1,0 +1,23 @@
+{
+  "name": "@drmikecrowe/config-npm-check-updates",
+  "description": "drmikecrowe npm-check-updates config",
+  "version": "0.1.3",
+  "author": {
+    "name": "drmikecrowe",
+    "email": "drmikecrowe@gmail.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "keywords": [
+    "drmikecrowe",
+    "npm-check-updates-config"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "drmikecrowe/configs.git"
+}
