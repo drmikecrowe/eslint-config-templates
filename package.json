@@ -1,7 +1,7 @@
 {
   "name": "root",
   "author": {
-    "name": "drmikecrowe",
+    "name": "Mike Crowe",
     "url": "https://github.com/drmikecrowe/configs"
   },
   "commitlint": {
@@ -20,14 +20,10 @@
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "sort-package-json": "^1.49.0"
+    "syncpack": "^5.7.11"
   },
   "engines": {
     "node": ">=10"
-  },
-  "eslintConfig": {
-    "extends": "@drmikecrowe/eslint-config",
-    "root": true
   },
   "homepage": "https://github.com/drmikecrowe/configs",
   "husky": {
@@ -39,10 +35,8 @@
   "lint-staged": {
     "*.{js,ts}": "eslint --fix",
     "*.{json,md}": "prettier --write",
-    "package.json": "sort-package-json"
+    "package.json": "syncpack format"
   },
-  "prettier": "@drmikecrowe/prettier-config",
-  "private": true,
   "repository": "https://github.com/drmikecrowe/configs.git",
   "scripts": {
     "lint": "eslint packages",

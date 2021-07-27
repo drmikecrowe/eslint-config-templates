@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     '@drmikecrowe/typescript-vue',
     '@drmikecrowe/prettier/lib/prettier',
-    'prettier/@typescript-eslint',
     'prettier/vue',
   ],
 }
