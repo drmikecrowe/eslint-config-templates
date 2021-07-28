@@ -7,16 +7,16 @@
 module.exports = {
   extends: [
     // Disable code style rules of `EsLint`, which should be handled by `Prettier`
-    'prettier',
+    "prettier",
   ],
 
   plugins: [
     // Use `eslint-plugin-prettier` to intergrade prettier to eslint workflow
-    'prettier',
+    "prettier",
   ],
 
   // Rules overrides
   rules: {
-    'prettier/prettier': 'warn',
+    "prettier/prettier": "warn",
   },
-}
+};

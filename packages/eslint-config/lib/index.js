@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended'],
+  extends: ["eslint:recommended"],
   env: {
     node: true,
     es6: true,
@@ -15,8 +15,8 @@ module.exports = {
      * @see https://eslint.org/docs/rules/quotes
      */
     quotes: [
-      'error',
-      'single',
+      "error",
+      "single",
       {
         allowTemplateLiterals: true,
       },
@@ -27,13 +27,13 @@ module.exports = {
      *
      * @see https://eslint.org/docs/rules/no-var
      */
-    'no-var': ['error'],
+    "no-var": ["error"],
 
     /**
      * Requires the use of trailing commas in object and array literals
      *
      * @see https://eslint.org/docs/rules/comma-dangle
      */
-    'comma-dangle': ['error', 'always-multiline'],
+    "comma-dangle": ["error", "always-multiline"],
   },
-}
+};

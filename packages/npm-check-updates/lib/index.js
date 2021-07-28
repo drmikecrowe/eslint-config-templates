@@ -6,7 +6,7 @@
 
 module.exports = {
   upgrade: true,
-  packageManager: 'yarn',
-  target: 'minor',
-  reject: ['typescript'],
-}
+  packageManager: "yarn",
+  target: "minor",
+  reject: ["typescript"],
+};

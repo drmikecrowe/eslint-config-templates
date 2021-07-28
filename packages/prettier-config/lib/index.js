@@ -21,13 +21,13 @@ module.exports = {
   singleQuote: true,
 
   // Change when properties in objects are quoted
-  quoteProps: 'as-needed',
+  quoteProps: "as-needed",
 
   // Use single quotes instead of double quotes in JSX
   jsxSingleQuote: true,
 
   // Print trailing commas wherever possible when multi-line
-  trailingComma: 'all',
+  trailingComma: "all",
 
   // Print spaces between brackets in object literals.
   bracketSpacing: true,
@@ -36,7 +36,7 @@ module.exports = {
   jsxBracketSameLine: false,
 
   // Include parentheses around a sole arrow function parameter
-  arrowParens: 'avoid',
+  arrowParens: "avoid",
 
   // Format only a segment of a file.
   rangeStart: 0,
@@ -55,24 +55,24 @@ module.exports = {
   insertPragma: false,
 
   // By default, Prettier will wrap markdown text as-is since some services use a line-break-sensitive renderer, e.g. GitHub comment and BitBucket.
-  proseWrap: 'preserve',
+  proseWrap: "preserve",
 
   // Specify the global whitespace sensitivity for HTML files
-  htmlWhitespaceSensitivity: 'css',
+  htmlWhitespaceSensitivity: "css",
 
   // Whether or not to indent the code inside <script> and <style> tags in Vue files
   vueIndentScriptAndStyle: false,
 
   // End of line
-  endOfLine: 'lf',
+  endOfLine: "lf",
 
   // Control whether Prettier formats quoted code embedded in the file
-  embeddedLanguageFormatting: 'auto',
+  embeddedLanguageFormatting: "auto",
 
   // Overrides for specific language
   overrides: [
     {
-      files: '*.{css,scss,less}',
+      files: "*.{css,scss,less}",
 
       options: {
         // Double quotes for CSS and its processor
@@ -81,7 +81,7 @@ module.exports = {
     },
 
     {
-      files: '*.md',
+      files: "*.md",
 
       options: {
         // Enlarge the indent
@@ -89,4 +89,4 @@ module.exports = {
       },
     },
   ],
-}
+};

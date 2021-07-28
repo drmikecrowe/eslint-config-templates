@@ -4,8 +4,8 @@
 
 module.exports = {
   extends: [
-    '@drmikecrowe/typescript-vue',
-    '@drmikecrowe/prettier/lib/prettier',
-    'prettier/vue',
+    "@drmikecrowe/typescript-vue",
+    "@drmikecrowe/prettier-vue",
+    "@drmikecrowe/prettier-typescript",
   ],
-}
+};

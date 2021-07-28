@@ -3,10 +3,5 @@
  */
 
 module.exports = {
-  extends: [
-    '@drmikecrowe/react',
-    // Extends preset about prettier
-    '@drmikecrowe/prettier/lib/prettier',
-    'prettier/react',
-  ],
-}
+  extends: ["@drmikecrowe/react", "@drmikecrowe/prettier"],
+};

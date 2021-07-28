@@ -1,13 +1,13 @@
-const _ = require('lodash')
-const fs = require('fs')
-const { json, packageJson, install, uninstall, file } = require('mrm-core')
-const format = require('syncpack/dist/commands/format')
-const gc = require('syncpack/dist/lib/get-config')
+const _ = require("lodash");
+const fs = require("fs");
+const { json, packageJson, install, uninstall } = require("mrm-core");
+const format = require("syncpack/dist/commands/format");
+const gc = require("syncpack/dist/lib/get-config");
 
 function wipeFiles(files) {
-  files.forEach(file => {
-    if (fs.existsSync(file)) fs.unlinkSync(file)
-  })
+  files.forEach((file) => {
+    if (fs.existsSync(file)) fs.unlinkSync(file);
+  });
 }
 
 module.exports = function task({
@@ -16,105 +16,105 @@ module.exports = function task({
   eslintObsoleteDependencies,
   eslintRules,
 }) {
-  const configFile = '.eslintrc.json'
-  const packages = ['eslint', `${configScope}/config-npm-check-updates`]
-  const packagesToRemove = ['jslint', 'jshint']
+  const configFile = ".eslintrc.json";
+  const packages = ["eslint", `${configScope}/config-npm-check-updates`];
+  const packagesToRemove = ["jslint", "jshint"];
 
-  const pkg = packageJson()
-  const hasTypescript = pkg.get('devDependencies.typescript')
-  const hasReact = pkg.get('dependencies.react')
-  const hasVue = pkg.get('dependencies.vue')
-  const hasPrettier = pkg.get('devDependencies.prettier')
+  const pkg = packageJson();
+  const hasTypescript = pkg.get("devDependencies.typescript");
+  const hasReact = pkg.get("dependencies.react");
+  const hasVue = pkg.get("dependencies.vue");
+  const hasPrettier = pkg.get("devDependencies.prettier");
 
-  const parts = []
-  if (hasPrettier) parts.push('prettier')
-  if (hasTypescript) parts.push('typescript')
-  if (hasVue) parts.push('vue')
-  else if (hasReact) parts.push('react')
+  const parts = [];
+  if (hasPrettier) parts.push("prettier");
+  if (hasTypescript) parts.push("typescript");
+  if (hasVue) parts.push("vue");
+  else if (hasReact) parts.push("react");
 
-  const base = parts.length ? '-' + parts.join('-') : ''
-  const full = `${configScope}/eslint-config${base}`
-  const eslintPreset = `${configScope}/${base.slice(1)}`
-  packages.push(full)
+  const base = parts.length ? "-" + parts.join("-") : "";
+  const full = `${configScope}/eslint-config${base}`;
+  const eslintPreset = `${configScope}/${base.slice(1)}`;
+  packages.push(full);
 
   // .eslintrc.json
-  const eslintrc = json(configFile, pkg.get('eslintConfig'))
+  const eslintrc = json(configFile, pkg.get("eslintConfig"));
 
-  const hasCustomPreset = _.castArray(eslintrc.get('extends', [])).find(x =>
-    x.startsWith(eslintPreset),
-  )
+  const hasCustomPreset = _.castArray(eslintrc.get("extends", [])).find((x) =>
+    x.startsWith(eslintPreset)
+  );
   if (!hasCustomPreset) {
-    eslintrc.set('extends', [eslintPreset])
+    eslintrc.set("extends", [eslintPreset]);
 
     // Now, remove all the eslint config that is now in the common packages
-    Object.keys(pkg.get('devDependencies')).forEach(key => {
-      if (key.startsWith('eslint-')) {
+    Object.keys(pkg.get("devDependencies")).forEach((key) => {
+      if (key.startsWith("eslint-")) {
         if (
-          key.endsWith('prettier') ||
-          key.endsWith('react') ||
-          key.endsWith('vue')
+          key.endsWith("prettier") ||
+          key.endsWith("react") ||
+          key.endsWith("vue")
         ) {
-          packagesToRemove.push(key)
+          packagesToRemove.push(key);
         }
       }
-    })
+    });
   }
   if (eslintRules) {
     eslintrc.merge({
       rules: eslintRules,
-    })
+    });
   }
-  eslintrc.delete()
-  pkg.set('eslintConfig', {
+  eslintrc.delete();
+  pkg.set("eslintConfig", {
     root: true,
     ...eslintrc.get(),
-  })
+  });
 
   // Now add ncurc
   fs.writeFileSync(
-    '.ncurc.js',
-    `module.exports = require("${configScope}/config-npm-check-updates");`,
-  )
+    ".ncurc.js",
+    `module.exports = require("${configScope}/config-npm-check-updates");`
+  );
 
   // .prettierrc
   if (hasPrettier) {
-    pkg.set('prettier', `${configScope}/prettier-config`)
-    packages.push(`${configScope}/prettier-config`)
+    pkg.set("prettier", `${configScope}/prettier-config`);
+    packages.push(`${configScope}/prettier-config`);
   }
 
   wipeFiles([
-    '.ncurc.json',
-    '.ncurc',
-    '.prettierrc',
-    '.prettierrc.js',
-    '.eslintrc.js',
-    '.eslintrc.json',
-  ])
+    ".ncurc.json",
+    ".ncurc",
+    ".prettierrc",
+    ".prettierrc.js",
+    ".eslintrc.js",
+    ".eslintrc.json",
+  ]);
 
-  pkg.save()
+  pkg.save();
 
-  format.formatToDisk(gc.getConfig({}))
+  format.formatToDisk(gc.getConfig({}));
 
   // Dependencies
-  uninstall([...packagesToRemove, ...eslintObsoleteDependencies])
-  install(packages)
-}
+  uninstall([...packagesToRemove, ...eslintObsoleteDependencies]);
+  install([...packages, ...eslintPeerDependencies]);
+};
 
-module.exports.description = 'Migrate ESLint config to my global'
+module.exports.description = "Migrate ESLint config to my global";
 module.exports.parameters = {
   eslintPeerDependencies: {
-    type: 'config',
+    type: "config",
     default: [],
   },
   eslintObsoleteDependencies: {
-    type: 'config',
+    type: "config",
     default: [],
   },
   eslintRules: {
-    type: 'config',
+    type: "config",
   },
   configScope: {
-    type: 'input',
-    default: '@drmikecrowe',
+    type: "input",
+    default: "@drmikecrowe",
   },
-}
+};

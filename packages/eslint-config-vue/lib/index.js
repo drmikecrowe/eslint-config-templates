@@ -6,15 +6,16 @@
 
 module.exports = {
   extends: [
-    '@drmikecrowe',
+    "@drmikecrowe",
     // Vue style guide
-    'plugin:vue/recommended',
+    "plugin:vue/recommended",
   ],
 
-  plugins: ['vue'],
+  plugins: ["vue"],
 
   parserOptions: {
-    parser: require.resolve('@babel/eslint-parser'),
+    parser: "babel-eslint",
+    sourceType: "module",
   },
 
   // Rules overrides
@@ -24,11 +25,11 @@ module.exports = {
      *
      * @see https://eslint.vuejs.org/rules/no-v-html.html
      */
-    'vue/no-v-html': 'off',
+    "vue/no-v-html": "off",
 
     // Put multiple attrs in multiple lines
-    'vue/max-attributes-per-line': [
-      'error',
+    "vue/max-attributes-per-line": [
+      "error",
       {
         singleline: 1,
         multiline: {
@@ -38,4 +39,4 @@ module.exports = {
       },
     ],
   },
-}
+};

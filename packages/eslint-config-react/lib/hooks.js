@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-  plugins: ['react-hooks'],
-}
+  plugins: ["react-hooks"],
+};

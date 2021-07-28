@@ -27,7 +27,7 @@ Each rule layers parent rules into it's rules.  For example:
 ```
   extends: [
     '@drmikecrowe/typescript-react',
-    '@drmikecrowe/prettier/lib/prettier',
+    '@drmikecrowe/prettier-typescript',
     ...
 ```
 
