@@ -9,9 +9,9 @@ Credit:  Forked from [ntnyq](https://github.com/ntnyq/configs)
 ### Install
 
 ```bash
-$ npm i @drmikecrowe/eslint-config -D
+$ npm i @YOUR_SCOPE/eslint-config -D
 # OR
-$ yarn add @drmikecrowe/eslint-config -D
+$ yarn add @YOUR_SCOPE/eslint-config -D
 ```
 
 ### Extend this config
@@ -22,7 +22,7 @@ in `.eslintrc.js`
 module.exports = {
     root: true,
 
-    extends: ['@drmikecrowe'],
+    extends: ['@YOUR_SCOPE'],
 
     rules: {
         // Override rules
@@ -36,7 +36,7 @@ in `package.json`
 {
     "eslintConfig": {
         "root": true,
-        "extends": "@drmikecrowe"
+        "extends": "@YOUR_SCOPE"
     }
 }
 ```

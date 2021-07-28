@@ -1,10 +1,10 @@
 {
-  "name": "@drmikecrowe/stylelint-config",
-  "description": "drmikecrowe stylelint config",
-  "version": "0.1.1",
+  "name": "@YOUR_SCOPE/stylelint-config",
+  "description": "YOUR_SCOPE stylelint config",
+  "version": "0.2.0",
   "author": {
-    "name": "drmikecrowe",
-    "email": "drmikecrowe@gmail.com"
+    "name": "YOUR_NAME",
+    "email": "YOUR_SCOPE@gmail.com"
   },
   "dependencies": {
     "stylelint-config-standard": "^20.0.0"
@@ -12,9 +12,9 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "homepage": "https://github.com/YOUR_SCOPE/configs#readme",
   "keywords": [
-    "drmikecrowe",
+    "YOUR_SCOPE",
     "stylelint-config"
   ],
   "license": "MIT",
@@ -22,5 +22,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "drmikecrowe/configs.git"
+  "repository": "YOUR_SCOPE/configs.git"
 }

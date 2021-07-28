@@ -1,11 +1,11 @@
 {
-  "name": "mrm-preset-drmikecrowe",
+  "name": "mrm-preset-YOUR_SCOPE",
   "description": "Common tasks for Mrm",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
-    "name": "drmikecrowe",
-    "email": "drmikecrowe@gmail.com",
-    "url": "https://github.com/drmikecrowe/configs"
+    "name": "YOUR_NAME",
+    "email": "YOUR_SCOPE@gmail.com",
+    "url": "https://github.com/YOUR_SCOPE/configs"
   },
   "dependencies": {
     "find-githost": "^1.0.0",
@@ -27,7 +27,7 @@
     "config.json",
     "*/index.js"
   ],
-  "homepage": "https://github.com/drmikecrowe/configs",
+  "homepage": "https://github.com/YOUR_SCOPE/configs",
   "keywords": [
     "mrm",
     "mrm-preset",
@@ -35,6 +35,6 @@
   ],
   "license": "MIT",
   "main": "config.json",
-  "repository": "https://github.com/drmikecrowe/configs.git",
+  "repository": "https://github.com/YOUR_SCOPE/configs.git",
   "scripts": {}
 }

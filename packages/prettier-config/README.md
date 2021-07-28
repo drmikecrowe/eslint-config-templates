@@ -9,9 +9,9 @@ Credit:  Forked from [ntnyq](https://github.com/ntnyq/configs)
 ### Install
 
 ```bash
-$ npm i @drmikecrowe/prettier-config -D
+$ npm i @YOUR_SCOPE/prettier-config -D
 # OR
-$ yarn add @drmikecrowe/prettier-config -D
+$ yarn add @YOUR_SCOPE/prettier-config -D
 ```
 
 ### Extend this config
@@ -20,6 +20,6 @@ in `package.json`
 
 ```json
 {
-    "prettier": "@drmikecrowe/prettier-config"
+    "prettier": "@YOUR_SCOPE/prettier-config"
 }
 ```

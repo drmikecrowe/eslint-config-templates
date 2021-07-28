@@ -8,7 +8,7 @@
 
 module.exports = {
   extends: [
-    "@drmikecrowe",
+    "@YOUR_SCOPE",
     // Enable all the recommended rules for @typescript-eslint/eslint-plugin
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
@@ -127,13 +127,5 @@ module.exports = {
         allowHigherOrderFunctions: true,
       },
     ],
-
-    // My personal additions
-    "class-methods-use-this": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-floating-promises": ["error"],
   },
 };

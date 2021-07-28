@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  extends: ["@drmikecrowe/stylelint-config"],
+  extends: ["@YOUR_SCOPE/stylelint-config"],
 
   plugins: ["stylelint-scss"],
 

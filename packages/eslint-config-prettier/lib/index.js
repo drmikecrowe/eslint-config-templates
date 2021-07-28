@@ -4,7 +4,7 @@
 
 module.exports = {
   extends: [
-    "@drmikecrowe",
+    "@YOUR_SCOPE",
     // Extends preset about prettier
     require.resolve("./prettier"),
   ],

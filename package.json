@@ -1,8 +1,8 @@
 {
   "name": "root",
   "author": {
-    "name": "Mike Crowe",
-    "url": "https://github.com/drmikecrowe/configs"
+    "name": "YOUR_NAME",
+    "url": "https://github.com/YOUR_SCOPE/configs"
   },
   "commitlint": {
     "extends": [
@@ -15,7 +15,7 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@commitlint/config-lerna-scopes": "^13.1.0",
-    "@drmikecrowe/eslint-config-prettier": "^0.1.4",
+    "@YOUR_SCOPE/eslint-config-prettier": "^0.1.4",
     "eslint": "^7.31.0",
     "husky": "^7.0.1",
     "lerna": "^4.0.0",
@@ -38,11 +38,11 @@
       "ecmaVersion": 12
     },
     "extends": [
-      "@drmikecrowe/prettier"
+      "@YOUR_SCOPE/prettier"
     ],
     "root": true
   },
-  "homepage": "https://github.com/drmikecrowe/configs",
+  "homepage": "https://github.com/YOUR_SCOPE/configs",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -54,7 +54,7 @@
     "*.{json,md}": "prettier --write",
     "package.json": "syncpack format"
   },
-  "repository": "https://github.com/drmikecrowe/configs.git",
+  "repository": "https://github.com/YOUR_SCOPE/configs.git",
   "scripts": {
     "lint": "eslint packages",
     "release": "yarn lint && lerna publish"

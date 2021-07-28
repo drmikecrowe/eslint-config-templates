@@ -1,21 +1,21 @@
 {
-  "name": "@drmikecrowe/eslint-config-prettier-vue",
-  "description": "drmikecrowe eslint config for Vue.js with prettier",
-  "version": "0.1.2",
+  "name": "@YOUR_SCOPE/eslint-config-prettier-vue",
+  "description": "YOUR_SCOPE eslint config for Vue.js with prettier",
+  "version": "0.2.0",
   "author": {
-    "name": "drmikecrowe",
-    "email": "drmikecrowe@gmail.com"
+    "name": "YOUR_NAME",
+    "email": "YOUR_SCOPE@gmail.com"
   },
   "dependencies": {
-    "@drmikecrowe/eslint-config-prettier": "0.1.2",
-    "@drmikecrowe/eslint-config-vue": "0.1.2"
+    "@YOUR_SCOPE/eslint-config-prettier": "0.2.0",
+    "@YOUR_SCOPE/eslint-config-vue": "0.2.0"
   },
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "homepage": "https://github.com/YOUR_SCOPE/configs#readme",
   "keywords": [
-    "drmikecrowe",
+    "YOUR_SCOPE",
     "eslint-config",
     "prettier",
     "vue"
@@ -25,5 +25,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "drmikecrowe/configs.git"
+  "repository": "YOUR_SCOPE/configs.git"
 }

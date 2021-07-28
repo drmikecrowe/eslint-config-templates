@@ -9,9 +9,9 @@ Credit:  Forked from [ntnyq](https://github.com/ntnyq/configs)
 ### Install
 
 ```bash
-$ npm i @drmikecrowe/eslint-config-react -D
+$ npm i @YOUR_SCOPE/eslint-config-react -D
 # OR
-$ yarn add @drmikecrowe/eslint-config-react -D
+$ yarn add @YOUR_SCOPE/eslint-config-react -D
 ```
 
 ### Extend this config
@@ -22,7 +22,7 @@ in `.eslintrc.js`
 module.exports = {
     root: true,
 
-    extends: ['@drmikecrowe/react'],
+    extends: ['@YOUR_SCOPE/react'],
 
     rules: {
         // Override rules
@@ -36,7 +36,7 @@ in `package.json`
 {
     "eslintConfig": {
         "root": true,
-        "extends": "@drmikecrowe/react"
+        "extends": "@YOUR_SCOPE/react"
     }
 }
 ```

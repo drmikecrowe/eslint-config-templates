@@ -1,17 +1,17 @@
 {
-  "name": "@drmikecrowe/config-npm-check-updates",
-  "description": "drmikecrowe npm-check-updates config",
-  "version": "0.1.3",
+  "name": "@YOUR_SCOPE/config-npm-check-updates",
+  "description": "YOUR_SCOPE npm-check-updates config",
+  "version": "0.2.0",
   "author": {
-    "name": "drmikecrowe",
-    "email": "drmikecrowe@gmail.com"
+    "name": "YOUR_NAME",
+    "email": "YOUR_SCOPE@gmail.com"
   },
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/drmikecrowe/configs#readme",
+  "homepage": "https://github.com/YOUR_SCOPE/configs#readme",
   "keywords": [
-    "drmikecrowe",
+    "YOUR_SCOPE",
     "npm-check-updates-config"
   ],
   "license": "MIT",
@@ -19,5 +19,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "drmikecrowe/configs.git"
+  "repository": "YOUR_SCOPE/configs.git"
 }
