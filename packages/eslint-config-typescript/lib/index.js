@@ -8,6 +8,7 @@
 
 module.exports = {
   extends: [
+    "plugin:promise/recommended",
     "@YOUR_SCOPE",
     // Enable all the recommended rules for @typescript-eslint/eslint-plugin
     "plugin:@typescript-eslint/recommended",
